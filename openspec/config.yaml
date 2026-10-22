@@ -1,0 +1,23 @@
+schema: spec-driven
+context: |
+This project is a website to introduce a student to the world. It will
+include a homepage, an about page, a portfolio page, and a contact page.
+Furthermore a simple private ToDo List shall be part of the project.
+The frontend shall be html and javascript. Backend shall be implemented with
+Python fastapi.
+The ToDo List shall be stored in a SQLite Database.
+Technology stack:
+- Backend: Python fastapi
+- Programming language: Python
+- Frontend: HTML, JavaScript
+- Database: SQLite
+- API: REST/JSON
+Architecture:
+- The application consists of a web frontend and a backend.
+- The frontend communicates exclusively with the backend REST API.
+- Business logic must be implemented in the backend.
+- The frontend must not access the database directly.
+Development:
+- Backend code is located in /backend.
+- Frontend code is located in /frontend.
+- OpenSpec is the source of truth for requirements.

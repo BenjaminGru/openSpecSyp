@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Alex Muster</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/nav.js" defer></script>
+</head>
+<body data-page="portfolio">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/index.html">Alex Muster</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/index.html" data-page="home">Home</a>
+      <a href="/about.html" data-page="about">About</a>
+      <a href="/portfolio.html" data-page="portfolio">Portfolio</a>
+      <a href="/contact.html" data-page="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Portfolio</h1>
+    <p class="lead">
+      A selection of school and personal projects. Each entry lists what the
+      project does and which technologies it uses.
+    </p>
+
+    <!-- PLACEHOLDER: Copy one <article> block per project and fill in your own.
+         Delete the whole block when you remove a project. -->
+    <div class="project-grid">
+      <article class="project">
+        <h2>Course Planner</h2>
+        <p>
+          A small planner that keeps track of assignments and exam dates for a
+          school year, with weekly summaries and a simple priority scheme.
+        </p>
+        <ul class="tag-list" aria-label="Technologies used">
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>SQLite</li>
+          <li>JavaScript</li>
+        </ul>
+        <a class="project-link" href="https://github.com/BenjaminGru/openSpecSyp">
+          View source code
+        </a>
+      </article>
+
+      <article class="project">
+        <h2>Weather Station Dashboard</h2>
+        <p>
+          A dashboard that reads measurements from a classroom weather station
+          and charts temperature, humidity, and air pressure over time.
+        </p>
+        <ul class="tag-list" aria-label="Technologies used">
+          <li>Python</li>
+          <li>SQLite</li>
+          <li>Chart.js</li>
+        </ul>
+        <a class="project-link" href="https://github.com/BenjaminGru/openSpecSyp">
+          View project
+        </a>
+      </article>
+
+      <article class="project">
+        <h2>Recipe Box</h2>
+        <p>
+          A school project about structuring a small content collection:
+          recipes are stored in JSON and rendered with plain JavaScript filters.
+        </p>
+        <ul class="tag-list" aria-label="Technologies used">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="empty-state">No projects are listed yet — check back soon.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Alex Muster · Built with FastAPI, HTML, CSS, and JavaScript.</p>
+  </footer>
+</body>
+</html>

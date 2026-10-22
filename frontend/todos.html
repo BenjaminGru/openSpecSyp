@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToDo List — Alex Muster</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/nav.js" defer></script>
+  <script src="/js/todos.js" defer></script>
+</head>
+<body data-page="todos">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/index.html">Alex Muster</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/index.html" data-page="home">Home</a>
+      <a href="/about.html" data-page="about">About</a>
+      <a href="/portfolio.html" data-page="portfolio">Portfolio</a>
+      <a href="/contact.html" data-page="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>ToDo List</h1>
+    <p class="lead">A private list of things to get done. Changes are saved immediately.</p>
+
+    <p id="error-banner" class="error-banner" role="alert" hidden></p>
+
+    <form id="create-form" class="todo-form" novalidate>
+      <h2>New item</h2>
+      <div class="field">
+        <label for="new-title">Title</label>
+        <input id="new-title" name="title" type="text" maxlength="200" required
+               placeholder="What needs to be done?">
+      </div>
+      <div class="field">
+        <label for="new-description">Description <span class="hint">(optional)</span></label>
+        <textarea id="new-description" name="description" rows="2" maxlength="2000"
+                  placeholder="Any details worth remembering"></textarea>
+      </div>
+      <button type="submit" class="button">Add item</button>
+    </form>
+
+    <section aria-labelledby="items-heading">
+      <h2 id="items-heading">Items</h2>
+      <p id="loading" class="muted">Loading…</p>
+      <p id="empty-state" class="empty-state" hidden>Nothing on the list yet. Add your first item above.</p>
+      <ul id="todo-list" class="todo-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Alex Muster · Built with FastAPI, HTML, CSS, and JavaScript.</p>
+  </footer>
+</body>
+</html>
